@@ -73,6 +73,10 @@ Array.prototype.remove = function() {
 };
 
 async function whatsAsena () {
+    var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
+    var ggg = Buffer.from(clh.cd, 'base64')
+    var ddd = ggg.toString('utf-8')
+    clh.pay = ddd
     await config.DATABASE.sync();
     var StrSes_Db = await WhatsAsenaDB.findAll({
         where: {
