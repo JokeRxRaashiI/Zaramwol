@@ -1,0 +1,253 @@
+{
+    "name": "ZaraMwol",
+    "description": "Zara - re-edited from asena. World’s first UserBot made for WhatsApp, and re-edited by raashii and jokerser",
+    "logo": "https://i.ibb.co/9rrnJ7g/20210815-080839.jpg",
+    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/Raashii/bot-setting",
+    "website":   "under maintenance",
+    "success_url": "under maintenance",
+    "stack": "container",
+    "env": {
+        "ZARA_SESSION": {
+            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours ZARA Session.",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
+            "required": true
+        },
+        "LANGUAGE": {
+            "description": "only en & ml language is available",
+            "required": true,
+            "value": "en"
+        },
+       "LOGO_LINK": {
+            "description": "Fill here any img link if you selected img as BOT LOGO",
+            "required": true,
+            "value": "https://i.imgur.com/rXTFf9l.jpeg"
+        },
+        "WEL_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "BYE_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+         "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        },   
+        "ANTİ_LİNK": {
+            "description": "Link Engelleme Sistemi. Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+         "STICKER_REPLY": {
+            "description": "if you need Automatic sticker reply type'true'. Otherwise false",
+            "required": false,
+            "value": "true"
+        }, 
+        "ANTI_FAKE_REMOVE": {
+            "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
+            "required": true,
+            "value": "false"
+        },
+         "THERI_KICK_GP": {
+            "description": "will remove members from group if they use bad words given in THERI_LIST_GP , if true ",
+            "required": true,
+            "value": "false"
+        },
+
+        "NUMBER": {
+            "description": "give your orginal phone number if you wish to add it in .number cmnd ",
+            "required": false
+        },
+         "THERI_KICK_PM": {
+            "description": "will block members if they use bad words given in THERI_LIST_PM , if true ",
+            "required": true,
+            "value": "false"
+        },
+         "CALL_BLOCK": {
+            "description": "will block members if they call on voice/video, if true ",
+            "required": true,
+            "value": "true"
+        },
+         "THERI_LIST_GP": {
+            "description": "enter the word you dont allow in your group ",
+            "required": true,
+            "value": "false"
+        },
+         "THERI_LIST_PM": {
+            "description": "enter the words you dont allow in your pm ",
+            "required": true,
+            "value": "false"
+        },        
+        "OWNER_NAME": {
+            "description": "enter ur name, this name will show on some commands",
+            "required": false,
+            "value": "Raashii"
+        },   
+        "TALKING_ZARA": {
+            "description": "turn on chat back auto reply Zara (use 'both' to on and 'false' to off and only for groups use 'group' & only for pm use 'pm')",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "Komutlar için. For commands.",
+            "required": true,
+            "value": "^[.!;#/]"
+        },
+        "ZARA_AI": {
+            "description": "turn on chat back auto reply Zara (use true to on and fale to off)",
+            "required": true,
+            "value": "true"
+        },
+        
+        "ALL_LINK_BAN": {
+            "description": "Link Blocking System.- this one blocks all link",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don't want to see error log.",
+            "required": true,
+            "value": "true"
+        },
+        "SEND_READ": {
+            "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
+            "required": true,
+            "value": "true"
+        },
+           "ALL_CAPTION": {
+            "description": "Caption for images and videos generated by Zara bot",
+            "required": false,
+            "value": "𝙼𝚊𝚍𝚎 𝚋𝚢 𝚉𝚊𝚛𝚊𝙼𝚠𝚘𝚕"
+        },
+        "HEROKU": {
+            "description": "Herokuda çalışıyorsa true yazın. If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        },
+         "BOT_NAME": {
+            "description": "heading for .help command reply",
+            "required": false,
+            "value": "𝚉𝙰𝚁𝙰𝙼𝚆𝙾𝙻"
+        },     
+         "BOT_DESCRIPTION": {
+            "description": "description for .help,.list,.menu command reply",
+            "required": false,
+            "value": "📛 *𝔭𝔢𝔴𝔢𝔯 𝔦𝔰 𝔭𝔢𝔴𝔢𝔯* 📛"
+        },      
+        "HEROKU_API_KEY": {
+            "description": "Herokuda API Keyiniz. Heroku API Key.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": "Düzenlenebilir Mute Mesajı. Customizable Mute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Düzenlenebilir Block Mesajı. Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Düzenlenebilir Unblock Mesajı. Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "Zara Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
+            "required": true,
+            "value": "public"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Herokuda uygulama adı. Heroku APP Name.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "Geliştiricilere özeldir.",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "Fotoğrafların arkaplanını kaldırır. https://remove.bg",
+            "required": false
+        },
+        "OWNER_MESSAGE": {
+            "description": "Customizable Owner Message!",
+            "required": false,
+            "value": "*Hehey I am ZaraMwol Powered By Raashii 💖*"
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive Message! Use => default, to change back.",
+            "required": false,
+            "value": "i am alive  \n\n ```coded by Raashii```"
+        },
+        "BAN_MESSAGE": {
+            "description": "Customizable kick Message! Use => default, to change back.",
+            "required": false,
+            "value": "good bye"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Customizable leave Message! Use => default, to change back.",
+            "required": false,
+            "value": "\n ```its time to leave bye bye``` \n"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "CHANGE_BGM_TO": {
+            "description": "Dont leave this blank choose the bgm you need - enter one or two",
+            "required": true,
+            "value": "one"
+          },
+        "DEMOTE_MESSAGE": {
+            "description": "Customizable Demote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable AFK Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "TAG_REPLY": {
+            "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
+            "required": false          
+        },
+        "NO_ONLINE": {
+            "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
