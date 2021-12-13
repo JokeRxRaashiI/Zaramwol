@@ -8,7 +8,7 @@ src="https://tenor.com/view/school-live-cute-hello-anime-girl-yuki-takeya-gif-14
 
 </div>
 <p align="center">
-ᴘʀᴏᴊᴇᴄᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ <a href="https://github.com/Raashii">Raashii</a>
+ᴘʀᴏᴊᴇᴄᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ <a href="https://github.com/Akash">Akash</a>
     <br>
        | © |
         Reserved 
