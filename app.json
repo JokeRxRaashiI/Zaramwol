@@ -1,46 +1,46 @@
 {
-    "name": "Zaramwol",
-    "description": "Zara bot - re-edited from asena. World’s first UserBot made for WhatsApp.",
+    "name": "ZaraMwol",
+    "description": "Zara - re-edited from asena. World’s first UserBot made for WhatsApp, and re-edited by raashii and jokerser",
     "logo": "https://i.ibb.co/9rrnJ7g/20210815-080839.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/Jokerser-x-Raashii/Zaramwol",
+    "repository": "https://github.com/AkashIncLtd/ZaraMwol",
     "website":   "under maintenance",
     "success_url": "under maintenance",
     "stack": "container",
     "env": {
-        "ASENA_SESSION": {
-            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours Asena Session.",
+        "ZARA_SESSION": {
+            "description": "Qr.Js ile oluşturduğunuz özel session kodu. Type here yours ZARA Session.",
             "required": true
         },
         "SUDO": {
             "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 1205xxxxxxxxx (USA number +1)",
-            "required": false
+            "required": true
         },
         "LANGUAGE": {
-            "description": "only english language is available",
+            "description": "only en & ml language is available",
             "required": true,
             "value": "en"
+        },
+       "LOGO_LINK": {
+            "description": "Fill here any img link if you selected img as BOT LOGO",
+            "required": true,
+            "value": "https://i.imgur.com/rXTFf9l.jpeg"
+        },
+        "WEL_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
+        },
+        "BYE_GIF": {
+            "description": "Fill here any gif link if you selected gif as WEELCOME",
+            "required": false,
+            "value": "false"
         },
          "BGM_FILTER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
             "value": "true"
-        },  
-         "GREETING_TYPE": {
-            "description": "If you like welcome message on gif write 'GIF' . Otherwise 'PP'",
-            "required": false,
-            "value": "GIF"
-        },  
-        "GIF_WEL": {
-            "description": "Welcome message video നിങ്ങൾക്ക് വേണ്ട welcome gif ന്റെ link കൊടുക്കുക .",
-            "required": true,
-            "value": "https://i.imgur.com/iRCjokG.mp4"
-        },
-        "GIF_BYE": {
-            "description": "Goodbye message video നിങ്ങൾക്ക് വേണ്ട goodbye gif ന്റെ link കൊടുക്കുക .",
-            "required": true,
-            "value": "https://i.imgur.com/NTar8dQ.mp4"
-        },
+        },   
         "ANTİ_LİNK": {
             "description": "Link Engelleme Sistemi. Link Blocking System.",
             "required": true,
@@ -50,42 +50,63 @@
             "description": "if you need Automatic sticker reply type'true'. Otherwise false",
             "required": false,
             "value": "true"
-        },  
-         "THERI_KICK": {
-            "description": "THERI VILICHAL KICK IF TRUE , just keep it false as this option is under maintanance ",
+        }, 
+        "ANTI_FAKE_REMOVE": {
+            "description": "Fake number auto remover (Except Indian numbers)! Give true for activating!",
             "required": true,
             "value": "false"
         },
-       "BOT_PRESENCE": {
-            "description": "Type the Presence of bot, presences: online => Always Shows the online, offline => Always Shows offline, typing => Always Shows typing, recording => Always Shows recording.. NOTE : THE PRESENCE WILL BE PERMANENT, UNTIL THE BOT IS ALIVE / RUNNING / WORKING",
-            "required": false,
-            "value": "offline"
-        },
-         "PM_BLOCK": {
-            "description": "PM IL MESSAGE ITTAL IF TRUE , just keep it false as this option is under maintanance ",
+         "THERI_KICK_GP": {
+            "description": "will remove members from group if they use bad words given in THERI_LIST_GP , if true ",
             "required": true,
             "value": "false"
         },
-        "AUTO_BİO": {
-            "description": "Duruma otomatik tarih ve zaman eklemek için true yapın. Set true for auto date, time in biography.",
+
+        "NUMBER": {
+            "description": "give your orginal phone number if you wish to add it in .number cmnd ",
+            "required": false
+        },
+         "THERI_KICK_PM": {
+            "description": "will block members if they use bad words given in THERI_LIST_PM , if true ",
+            "required": true,
+            "value": "false"
+        },
+         "CALL_BLOCK": {
+            "description": "will block members if they call on voice/video, if true ",
             "required": true,
             "value": "true"
         },
+         "THERI_LIST_GP": {
+            "description": "enter the word you dont allow in your group ",
+            "required": true,
+            "value": "false"
+        },
+         "THERI_LIST_PM": {
+            "description": "enter the words you dont allow in your pm ",
+            "required": true,
+            "value": "false"
+        },        
         "OWNER_NAME": {
-            "description": "reply for .owner ! give your details, Use => default, to change back.",
+            "description": "enter ur name, this name will show on some commands",
             "required": false,
             "value": "Raashii"
-       },    
+        },   
+        "TALKING_ZARA": {
+            "description": "turn on chat back auto reply Zara (use 'both' to on and 'false' to off and only for groups use 'group' & only for pm use 'pm')",
+            "required": true,
+            "value": "false"
+        },
         "HANDLERS": {
             "description": "Komutlar için. For commands.",
             "required": true,
             "value": "^[.!;#/]"
         },
-        "FULL_EVA": {
-            "description": "Hesabınızı bir Chatbot'a Çevirin! Turn your account into a chatbot!",
+        "ZARA_AI": {
+            "description": "turn on chat back auto reply Zara (use true to on and fale to off)",
             "required": true,
-            "value": "false"
+            "value": "true"
         },
+        
         "ALL_LINK_BAN": {
             "description": "Link Blocking System.- this one blocks all link",
             "required": true,
@@ -94,7 +115,7 @@
         "NO_LOG": {
             "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don't want to see error log.",
             "required": true,
-            "value": "false"
+            "value": "true"
         },
         "SEND_READ": {
             "description": "Görüldü atmak istiyorsanız true yazın. Write true if you want to throw seen.",
@@ -102,9 +123,9 @@
             "value": "true"
         },
            "ALL_CAPTION": {
-            "description": "Caption for images and videos generated by pinky bot",
+            "description": "Caption for images and videos generated by Zara bot",
             "required": false,
-            "value": "Made By 𝐙𝐀𝐑𝐀🧚‍♀️𝐌𝐖𝐎𝐋"
+            "value": "𝙼𝚊𝚍𝚎 𝚋𝚢 𝚉𝚊𝚛𝚊𝙼𝚠𝚘𝚕"
         },
         "HEROKU": {
             "description": "Herokuda çalışıyorsa true yazın. If it is running in Heroku, type true.",
@@ -112,10 +133,15 @@
             "value": "true"
         },
          "BOT_NAME": {
-            "description": "heading for .list command reply",
+            "description": "heading for .help command reply",
             "required": false,
-            "value": "•━━━━╼ Zara Mwol ╾━━━•"
-        },
+            "value": "𝚉𝙰𝚁𝙰𝙼𝚆𝙾𝙻"
+        },     
+         "BOT_DESCRIPTION": {
+            "description": "description for .help,.list,.menu command reply",
+            "required": false,
+            "value": "📛 *𝔭𝔢𝔴𝔢𝔯 𝔦𝔰 𝔭𝔢𝔴𝔢𝔯* 📛"
+        },      
         "HEROKU_API_KEY": {
             "description": "Herokuda API Keyiniz. Heroku API Key.",
             "required": true
@@ -129,11 +155,6 @@
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
             "required": false,
             "value": "false"
-        },
-        "TAG_HEADER": {
-            "description": "Heading when taging all",
-            "required": false,
-            "value": "hear me friends"
         },
         "UNMUTE_MESSAGE": {
             "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
@@ -151,7 +172,7 @@
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "WhatsAsena Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "description": "Zara Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. and if you use “admin”, only admin can use bot and not all feature (only features needed to maintain a standerd group)",
             "required": true,
             "value": "public"
         },
@@ -168,10 +189,15 @@
             "description": "Fotoğrafların arkaplanını kaldırır. https://remove.bg",
             "required": false
         },
+        "OWNER_MESSAGE": {
+            "description": "Customizable Owner Message!",
+            "required": false,
+            "value": "*Hehey I am ZaraMwol Powered By Raashii 💖*"
+        },
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "i am alive  \n\n ```Zaramwol🖤```"
+            "value": "i am alive  \n\n ```coded by Raashii```"
         },
         "BAN_MESSAGE": {
             "description": "Customizable kick Message! Use => default, to change back.",
@@ -197,7 +223,7 @@
             "description": "Dont leave this blank choose the bgm you need - enter one or two",
             "required": true,
             "value": "one"
-        },
+          },
         "DEMOTE_MESSAGE": {
             "description": "Customizable Demote Message! Use => default, to change back.",
             "required": false,
@@ -208,22 +234,12 @@
             "required": false,
             "value": "default"
         },
-        "GAN_IMAGE": {
-            "description": "Gan Style eklentisi için resim bağlantısı yazın. Type image link for Gan Style plugin.",
-            "required": true,
-            "value": "https://i.hizliresim.com/loUtAb.jpg"
-        },
         "TAG_REPLY": {
             "description": "Enter jid of your number so that you get a audio reply when metioned example - 91xxxxxxxxxx@s.whatsapp.net - for india",
             "required": false          
         },
         "NO_ONLINE": {
             "description": "Çevrimiçi görünmek istemiyorsanız true yazın. Type true if you don't want to appear online.",
-            "required": false,
-            "value": "true"
-        },
-        "COFFEEHOUSE_API_KEY": {
-            "description": "Pass This Step! - Bu Bölümü Geçin!",
             "required": false,
             "value": "true"
         }
